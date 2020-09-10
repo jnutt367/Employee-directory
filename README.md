@@ -1,2 +1,2 @@
 # Employee-directory
-Team Treehouse ppproject 8
+Team Treehouse project 8
