@@ -1,20 +1,65 @@
 *{
-	paddin:0;
-	margin: 0;
 	box-sizing: border-box;
-	text-align: center;
+	
 }
+
+
+
 body {
 position: relative;
 }
-
-img{
-	border-radius: 50%;
+h1 {
+	font-size: 1em;
+	margin-bottom: 15px;
 }
 .grid-container {
-	
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.card {
+	display: flex;
+	border: 1px solid silver;
+	height: 100px;
+	width: 250px;
+	border-radius: 5px;
+	font-size: 10px;
+	padding-top: 15px;
+}
+.card img {
+	padding: 15px;
+	border-radius: 50%;
+	height: 85px;
+	width: 85px;
+	
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(100, 100, 100, 0.4)
+}
+
+.modal {
+width: 375px;
+margin: 15% auto auto;
+position: relative;
+text-align: center;
+background: #fff;
+border: 1px solid #778;
+border-radius: 5px;
+padding: 30px 20px;
+}
+
+.modal-close {
+position: absolute;
+right: 15px;
+top: 5px;
+cursor: pointer;
+}
+
+.hidden {
+display: none;
 }
