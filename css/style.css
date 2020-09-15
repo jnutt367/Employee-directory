@@ -26,6 +26,9 @@ h1 {
 	font-size: 10px;
 	padding-top: 15px;
 }
+.card:hover {
+	color: blue;
+}
 .card img {
 	padding: 15px;
 	border-radius: 50%;
