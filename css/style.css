@@ -21,8 +21,7 @@ form input {
 	width: 30ch;
 }
 .grid-container {
-	text-align: center;
-	max-width: 800px;
+	
 	margin-left: 25px;
 	display: grid;
 	justify-content: center;
