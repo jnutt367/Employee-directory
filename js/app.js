@@ -89,7 +89,7 @@ gridContainer.addEventListener( 'click' , e => {
         indexNum = 0;
         displayModal(indexNum);
     }
-    })    
+    });    
 
     modalPrev.addEventListener("click", () => {
         if(indexNum > 0) {

@@ -1,6 +1,5 @@
 *{
 	box-sizing: border-box;
-	
 }
 
 
@@ -10,59 +9,87 @@ position: relative;
 }
 h1 {
 	font-size: 1em;
+	margin-top: 30px;
+	margin-left: 25px;
 	margin-bottom: 15px;
 }
+form {
+	margin-bottom: 25px;
+	margin-left: 320px;
+	}
+form input { 
+	width: 30ch;
+}
 .grid-container {
+	text-align: center;
+	max-width: 800px;
+	margin-left: 25px;
 	display: grid;
+	justify-content: center;
+	align-items: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 }
 .card {
 	display: flex;
 	border: 1px solid silver;
-	height: 100px;
+	height: 115px;
 	width: 250px;
 	border-radius: 5px;
 	font-size: 10px;
 	padding-top: 15px;
 }
-.card:hover {
-	color: blue;
-}
+
 .card img {
-	padding: 15px;
+	
+	padding: 10px;
 	border-radius: 50%;
 	height: 85px;
 	width: 85px;
-	
 }
+
+
+
+
+
+
+
 .overlay {
 position: absolute;
 top: 0;
-left: 0;
 right: 0;
 bottom: 0;
+left: 0;
 background: rgba(100, 100, 100, 0.4)
 }
 
 .modal {
-width: 375px;
-margin: 15% auto auto;
-position: relative;
-text-align: center;
-background: #fff;
-border: 1px solid #778;
-border-radius: 5px;
-padding: 30px 20px;
+	width: 320px;
+	height: 450px;
+	margin: 25px auto;
+	position: relative;
+	text-align: center;
+	background: #fff;
+	border: 1px solid silver;
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+.modal img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
 }
 
 .modal-close {
-position: absolute;
-right: 15px;
-top: 5px;
-cursor: pointer;
+	font-size: .5em;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .hidden {
-display: none;
+	display: none;
 }
