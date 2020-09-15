@@ -18,7 +18,35 @@ fetch(urlAPI)
 .catch(err => console .log(err))
 
 
+
+
+
+
+
 //Search Functionality that filters employees
+function filterSearch() {
+  let input = document.getElementById('search');
+  let filter = input.value.toUpperCase();
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (let i = 0; i < employees.length; i++) {
+    let dataIndex = `[data-index="${i}"]`;
+    let currentCard = document.querySelector(dataIndex);
+    let currentName = currentCard.querySelector('h2').textContent.toUpperCase();
+
+    if (currentName.includes(filter)){
+        currentCard.style.display = "";
+
+    } else {
+        currentCard.style.display = "none";
+    }
+
+  }
+}
+
+
+
+
 
 
 
@@ -89,7 +117,7 @@ gridContainer.addEventListener( 'click' , e => {
         indexNum = 0;
         displayModal(indexNum);
     }
-    });    
+    });  
 
     modalPrev.addEventListener("click", () => {
         if(indexNum > 0) {
@@ -99,7 +127,7 @@ gridContainer.addEventListener( 'click' , e => {
         indexNum = 11;
         displayModal(indexNum);
     }
-    })
+  })
   
 }});
 
