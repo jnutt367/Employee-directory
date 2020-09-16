@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Employee Directory Treehouse Project 8</title>
@@ -12,16 +12,17 @@
 		<h1>Awesome Startup Employee Directory</h1>
 	</header>
 	<form>
-	<input type="text" name="name" placeholder="Search employees by name...">
+	<input type="text" id="search" placeholder="Search Employees by name..." onkeyup="filterSearch()">
 	</form>
 	<main class="grid-container">
 		<div class="card"> 
-			<img class="avatar" src=""/>
+			<img class="avatar" src="api" alt="Random Employee"/>
 			<div class="text-container">
-				<h2 class="name"></h2>
+				<h2 class="name">Generated</h2>
 				<p class="email"></p>
 				<p class="address"></p>
 			</div>
+		</div>
 	</main>	
 		<div class="overlay hidden">
 			<div class="modal">
@@ -29,9 +30,9 @@
 				<div class="modal-content">
 									
 					<!-- modal information will be added with JS here -->
-					<img class="avatar" src="" />
+					<img class="avatar" src="api" alt="Random Employee"/>
 					<div class="text-container">
-						<h2 class="name"></h2>
+						<h2 class="name">Generated</h2>
 						<p class="email"></p>
 						<p class="address"></p>
 						<hr />
