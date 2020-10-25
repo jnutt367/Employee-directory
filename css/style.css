@@ -46,6 +46,7 @@ form input {
 	border-radius: 50%;
 	height: 85px;
 	width: 85px;
+	box-shadow: 3px 3px red, -1em 0 .4em olive;
 }
 
 
