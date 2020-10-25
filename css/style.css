@@ -38,6 +38,7 @@ form input {
 	border-radius: 5px;
 	font-size: 10px;
 	padding-top: 15px;
+	box-shadow: 3px 3px grey, -1em 0 .4em silver;
 }
 
 .card img {
